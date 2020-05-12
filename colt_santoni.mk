@@ -17,7 +17,7 @@
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
 # Inherit some common Coltos stuff.
-$(call inherit-product, vendor/colt/config/common.mk)
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
@@ -30,9 +30,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 COLT_BUILD_TYPE := Official
 
 # Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.colt.maintainer=Aman_dwivedi
-
+COLT_DEVICE_MAINTAINER := Aman_dwivedi
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720x1280
 
